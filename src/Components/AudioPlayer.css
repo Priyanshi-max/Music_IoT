@@ -1,0 +1,29 @@
+/* AudioPlayer.css */
+.audio-player-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.audio-controls {
+  display: flex;
+  align-items: center;
+}
+
+.play-pause-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.seek-bar {
+  margin: 0 10px;
+  width: 100%;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: #555;
+}

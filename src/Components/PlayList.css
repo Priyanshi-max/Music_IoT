@@ -1,0 +1,33 @@
+/* Playlist.css */
+.playlist-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.playlist-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.playlist-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlist-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.playlist-item:hover {
+  background-color: #f0f0f0;
+}
+
+.playlist-item.active {
+  background-color: #007bff;
+  color: #fff;
+}

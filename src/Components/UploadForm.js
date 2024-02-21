@@ -1,5 +1,6 @@
 // UploadForm.js
 import React from 'react';
+import "./UploadForm.css"
 
 const UploadForm = ({ onUpload }) => {
   const handleChange = (e) => {
@@ -8,8 +9,9 @@ const UploadForm = ({ onUpload }) => {
   };
 
   return (
-    <div>
-      <input type="file" accept=".mp3" onChange={handleChange} />
+    <div className='upload-form-container'>
+      <label htmlFor="uploadInput">Choose a file</label>
+      <input type="file" id="uploadInput" accept=".mp3" onChange={handleChange} />
     </div>
   );
 };

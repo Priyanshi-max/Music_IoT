@@ -1,19 +1,19 @@
 // Playlist.js
 import React from 'react';
+import './PlayList.css'; 
 
 const Playlist = ({ playlist, currentTrackIndex, onSelectTrack }) => {
   return (
-    <div>
-      <h2>Playlist</h2>
-      <ul>
+    <div className="playlist-container">
+      <h2 className="playlist-title">Playlist</h2>
+      <ul className="playlist-items">
         {playlist.map((track, index) => (
-          <li key={index}>
-            <button
-              onClick={() => onSelectTrack(index)}
-              style={{ fontWeight: index === currentTrackIndex ? 'bold' : 'normal' }}
-            >
-              {track.name}
-            </button>
+          <li
+            key={index}
+            className={`playlist-item ${index === currentTrackIndex ? 'active' : ''}`}
+            onClick={() => onSelectTrack(index)}
+          >
+            {track.name}
           </li>
         ))}
       </ul>

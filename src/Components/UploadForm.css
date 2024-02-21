@@ -1,0 +1,26 @@
+/* UploadForm.css */
+
+.upload-form-container {
+    margin: 20px;
+  }
+  
+  .upload-form-container input[type="file"] {
+    display: none;
+  }
+  
+  .upload-form-container label {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-form-container label:hover {
+    background-color: #2980b9;
+  }
+  
+  .upload-form-container label:active {
+    background-color: #1f618d;
+  }
+  

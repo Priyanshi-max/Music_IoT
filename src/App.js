@@ -38,17 +38,11 @@ function App() {
         <div className="playlist-header">
           <h2>Playlist</h2>
         </div>
-        <ul className="playlist-items">
-          {playlist.map((track, index) => (
-            <li
-              key={index}
-              className={`playlist-item ${index === currentTrackIndex ? 'active' : ''}`}
-              onClick={() => handleSelectTrack(index)}
-            >
-              {track.name}
-            </li>
-          ))}
-        </ul>
+        <Playlist
+          playlist={playlist}
+          currentTrackIndex={currentTrackIndex}
+          onSelectTrack={handleSelectTrack}
+        />
       </div>
     </div>
   );
